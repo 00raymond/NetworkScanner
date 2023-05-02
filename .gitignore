@@ -1,0 +1,30 @@
+# CLion project files
+.idea/
+*.iml
+
+# build files and directories
+cmake-build-*/
+build/
+_build/
+Debug/
+Release/
+bin/
+obj/
+lib/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.dylib
+*.out
+*.app
+
+# cache, temporary, and backup files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.cache
+*.user
+*~
