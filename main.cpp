@@ -70,14 +70,13 @@ int main() {
 
         devList.push_back(devStats);
         pcap_close(currHandle);
-    }
 
+    }
+    pcap_freealldevs(alldevices);
     cout << "Device list with packet counts:" << endl;
     for (int i = 0; i < devList.size(); i++) {
         cout << i + 1 << ". " << devList[i].devName << " - " << devList[i].packCount << endl;
     }
-
-    pcap_freealldevs(alldevices);
 
     return 0;
 }
